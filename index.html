@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamestop</title>
+    <img src="https://pbs.twimg.com/media/EswVG-YXAAAo9Lq.png" alt="Logo" width="250" height="250">
+</head>
+<body>
+    <h2>Place Your Order</h2>
+    
+    <label for="Game-selector">Select a Video Game:</label>
+    <select id="Game-selector">
+        <option value="10">Grand Theft Auto VI - $80</option>
+        <option value="15">Minecraft 2 - $25</option>
+        <option value="20">Red Dead Redemption 3 - $70</option>
+    </select>
+    
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" value="1" min="1">
+    
+    <p>Total Price: $<span id="total-price">10</span></p>
+    
+    <button id="place-order">Place Order</button>
+    
+    <p id="order-summary"></p>
+    
+    <script src="main.js"></script>
+</body>
+</html>
