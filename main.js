@@ -15,4 +15,6 @@ function updateTotalPrice() {
 
 // here are Event listeners to update total price when video game or quantity is changed by the customer AKA you BIG SPENDA
 gameSelector.addEventListener('change', updateTotalPrice);  // When a different video game is selected
-quantityNumber.addEventListener('input', updateTotalPrice);  // When quantity changes
+quantityNumber.addEventListener('input', updateTotalPrice);  // When quantity changes.
+
+//Task 4- Handle Order Submission
