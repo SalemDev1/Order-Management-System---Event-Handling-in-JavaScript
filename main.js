@@ -18,3 +18,16 @@ gameSelector.addEventListener('change', updateTotalPrice);  // When a different 
 quantityNumber.addEventListener('input', updateTotalPrice);  // When quantity changes.
 
 //Task 4- Handle Order Submission
+const placeOrderButton = document.getElementById('place-order');  // Button to place the order
+const orderSummary = document.getElementById('order-summary');  // Area to show the order summary
+
+// Event listener that handles the order submission
+placeOrderButton.addEventListener('click', () => {
+    const selectedGame = gameSelector.options[gameSelector.selectedIndex].text;  // Gets selected game name and price
+    const quantity = quantityNumber.value;  // Gets the quantity entered
+    const totalPrice = totalPriceElement.textContent;  // Gets the calculated total price
+    
+ // Displays the order summary with the video game you bought
+ orderSummary.textContent = `Congratulations on your purchase of ${quantity} copy/copies of ${selectedGame}! Hope you enjoy grinding through it. 
+ Total cost: $${totalPrice}`;
+});
